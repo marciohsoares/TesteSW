@@ -3,10 +3,15 @@ package modelo;
 public class Clientes {
 	
 	private String nome;
-	private Float n1,n2,n3,n4;
+	private Double n1,n2,n3,n4;
+	
 	
 	public Clientes() {
 		super();
+	}
+	
+	public Double getNotas(){
+		return (getN1()+getN2()+getN3()+getN4())/4;
 	}
 	
 	public String getNome() {
@@ -16,28 +21,28 @@ public class Clientes {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Float getN1() {
+	public Double getN1() {
 		return n1;
 	}
-	public void setN1(Float n1) {
+	public void setN1(Double n1) {
 		this.n1 = n1;
 	}
-	public Float getN2() {
+	public Double getN2() {
 		return n2;
 	}
-	public void setN2(Float n2) {
+	public void setN2(Double n2) {
 		this.n2 = n2;
 	}
-	public Float getN3() {
+	public Double getN3() {
 		return n3;
 	}
-	public void setN3(Float n3) {
+	public void setN3(Double n3) {
 		this.n3 = n3;
 	}
-	public Float getN4() {
+	public Double getN4() {
 		return n4;
 	}
-	public void setN4(Float n4) {
+	public void setN4(Double n4) {
 		this.n4 = n4;
 	}
 
