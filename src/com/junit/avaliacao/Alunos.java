@@ -1,13 +1,17 @@
-package modelo;
+package com.junit.avaliacao;
 
-public class Clientes {
+public class Alunos {
 	
 	private String nome;
 	private Double n1,n2,n3,n4;
 	
 	
-	public Clientes() {
+	public Alunos(Double n1,Double n2,Double n3,Double n4) {
 		super();
+		this.n1 = n1;
+		this.n2 = n2;
+		this.n3 = n3;
+		this.n4 = n4;
 	}
 	
 	public Double getNotas(){
